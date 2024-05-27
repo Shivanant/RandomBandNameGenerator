@@ -1,0 +1,20 @@
+<%- include('partials/head') %>
+
+<div class="content">
+
+    <% if(locals.name){ %>
+        <h1>  <%= name %> </h1>
+        <% }else{ %>
+            <h1>Press the button for generating the random name. </h1>
+
+    <% } %>
+    <form action="./submit" method="post">
+        <input class="generate" type="submit">
+    </form>
+
+
+</div>
+
+
+
+<%- include('partials/footer') %>
